@@ -1,0 +1,24 @@
+<html>
+    <script src="jquery/jquery-2.2.0.min.js"></script>
+    <script>
+    
+        function mostra(tag) {
+            alert(tag);
+        }
+        
+        $(document).ready(function () {
+            $("img.i2").click(function () {
+                dados = $(this).data("tag");
+                alert(dados);
+            })
+        }) 
+        
+    </script>
+    <body>
+        <img class="i1" src="text.png" onclick="mostra('nature');"/>
+        <img class="i1" src="text.png" onclick="mostra('sports');"/>
+        
+        <img class="i2" src="text.png" data-tag="nature2"/>
+        <img class="i2" src="text.png" data-tag="sports2"/>
+    </body>
+</html>
